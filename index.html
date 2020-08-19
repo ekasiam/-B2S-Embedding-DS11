@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🐱‍👤Embedding Analytics</title>
+
+    <!-- Paste in the script for Tableau javascript API -->
+    <script
+      type="text/javascript"
+      src="https://public.tableau.com/javascripts/api/tableau-2.min.js"
+    ></script>
+
+    <!--   link to the style sheet, if you want to link to a file in the same folder then hit ./ and it'll bring up the relevant files    -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- this is a header, h1 is biggest, h2 is next etc. -->
+    <h1>THIS IS OUR DS11 EMBEDDING PAGE</h1>
+
+    <div>
+      <!-- create a button to export to pdf -->
+      <button id="pdfButton">Export to PDF</button>
+
+      <!-- create a button with an image -->
+      <button id="imageButton">Export to Image</button>
+    </div>
+    <hr />
+    <div>
+      <!-- create show & hide buttons -->
+      <button id="showButton">Show</button>
+      <button id="hideButton">Hide</button>
+      <button id="switchButton">Switch Vizes</button>
+    </div>
+    <hr />
+    <!-- when using filters with values, these need to be case sensitive, as they are in the viz-->
+    <div>
+      <button class="filter" value="Central">Central</button>
+      <button class="filter" value="North">North</button>
+      <button class="filter" value="South">South</button>
+    </div>
+
+    <!-- div creates other elements in a container, div needs an id. Classes are multiple, but IDs need to be unique, the div is then filled with the javascript file -->
+    <div id="vizContainer"></div>
+
+    <!-- Now need to reference the app.js file-->
+    <script src="./app.js"></script>
+  </body>
+</html>

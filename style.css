@@ -1,0 +1,5 @@
+/* this is where you can specify diff stylings by using class and then referencing them in the html */
+
+.h1 {
+  font-family: fantasy;
+}
